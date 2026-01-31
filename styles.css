@@ -6,13 +6,16 @@
     padding: 0;
 }
 
+
 #dashboard {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: auto 1fr;
     height: 100vh;
 }
 
+
+/* Sidebar area */
 #sidebar {
     grid-row: 1 / 3;
     display: grid;
@@ -22,14 +25,94 @@
     background-color: skyblue;
 }
 
+
+/* Header area */
 #header {
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 6px -6px black;
+    
     background-color: white;
 }
 
+#header-top-section {
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#header-bottom-section {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#search-subarea {
+    display: grid; 
+    grid-template-columns: 1fr 12fr;
+    grid-template-rows: 1fr;
+    justify-items: flex-start;
+    align-items: center;
+    padding-left: 24px;
+
+    /* background-color: yellow; */
+}
+
+    #search-subarea input {
+        width: 300px;
+        height: 25px;
+        border-radius: 16px;
+        border: 2px solid gray;
+
+        background-color: lightgray;
+    }
+
+#profile-subarea {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+
+    /* background-color: blue; */
+}
+
+#name-subarea {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+
+
+    /* background-color: green; */
+}
+
+#actions-subarea {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+
+    /* background-color: red; */
+}
+
+#actions-subarea button {
+    width: 125px;
+    height: 35px;
+    border-radius: 16px;
+
+    background-color: lightblue;
+    
+}
+
+/* Main area */
 #main-area {
+    display: grid;
+
     background-color: rgb(217, 217, 217);
 }
 
+
+
+/* Footer area */
 #footer {
     grid-column: 1 / 3;
     background-color: black;
