@@ -106,20 +106,19 @@
 /* Main area */
 #main-area {
     display: grid;
-    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 2.5fr 1fr;
 
     background-color: rgb(217, 217, 217);
 }
 
-#main-area-titles {
+#main-area-projects {
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 10fr;
 }
 
-#main-area-content {
-    display: grid;
-    grid-template-columns: 2.5fr 1fr;
-}
+    #main-area-projects p {
+        margin-left: 32px
+    }
 
     #main-area-cards {
         display: grid;
@@ -135,9 +134,18 @@
             background-color: white;
         }
 
+#main-area-subsection {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+
+    #main-area-subsection p {
+        margin-left: 32px;
+    }
+
     #main-area-announcements {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 8fr 1fr 8fr;
     }
 
         #main-area-announcements div {
@@ -145,6 +153,10 @@
             border-radius: 16px;
 
             background-color: white;
+        }
+
+        #main-area-announcements p {
+            margin-left: 32px;
         }
 
 
