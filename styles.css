@@ -106,9 +106,46 @@
 /* Main area */
 #main-area {
     display: grid;
+    grid-template-rows: 1fr 10fr;
 
     background-color: rgb(217, 217, 217);
 }
+
+#main-area-titles {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+
+#main-area-content {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+
+    #main-area-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+        #main-area-cards div {
+            margin: 32px;
+            border-radius: 16px;
+            border-left: solid gold 48px;
+
+            background-color: white;
+        }
+
+    #main-area-announcements {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+        #main-area-announcements div {
+            margin: 32px;
+            border-radius: 16px;
+
+            background-color: white;
+        }
 
 
 
