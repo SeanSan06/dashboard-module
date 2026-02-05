@@ -22,7 +22,7 @@
     grid-template-rows: 100px repeat(2, 250px);
     padding: 16px;
 
-    background-color: skyblue;
+    background-color: rgba(25, 146, 212);
 }
 
 
@@ -82,7 +82,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
 
-
     /* background-color: green; */
 }
 
@@ -99,7 +98,7 @@
     height: 35px;
     border-radius: 16px;
 
-    background-color: lightblue;
+    background-color: rgba(25, 146, 212);
     
 }
 
@@ -117,7 +116,12 @@
 }
 
     #main-area-projects p {
-        margin-left: 32px
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin: 0px;
+        margin-left: 32px;
+        font-size: 3rem;
     }
 
     #main-area-cards {
@@ -140,7 +144,12 @@
 }
 
     #main-area-subsection p {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin: 0px;
         margin-left: 32px;
+        font-size: 3rem;
     }
 
     #main-area-announcements {
@@ -156,7 +165,12 @@
         }
 
         #main-area-announcements p {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            margin: 0px;
             margin-left: 32px;
+            font-size: 3rem;
         }
 
 
