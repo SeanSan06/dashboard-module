@@ -19,6 +19,16 @@
     height: 25px;
 }
 
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(46, 223, 236);
+    border-radius: 50%;
+}
+
 
 /* Sidebar area */
 #sidebar {
@@ -99,7 +109,7 @@
 
 #name-subarea {
     display: grid; 
-    grid-template-columns: 8fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     place-items: center;
 }
 
@@ -130,7 +140,7 @@
 
 #main-area-projects {
     display: grid;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 1fr 20fr;
 }
 
     #main-area-projects #your-projects {
@@ -163,12 +173,13 @@
         }
 
         .main-area-card p {
+            max-height: 120px;
             font-size: 1rem;
         }
 
 #main-area-subsection {
     display: grid;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 1fr 20fr;
 }
 
     #main-area-subsection #your-projects {
@@ -208,6 +219,7 @@
 
         #trending {
             margin-left: 32px;
+            font-size: 1.75rem;
         }
 
         #main-area-announcements h4 {
@@ -218,11 +230,16 @@
             font-size: 1.5rem;
         }
         
+        #trending-profile {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+
         #main-area-announcements p {
             display: flex;
             justify-content: flex-start;
-            align-items: flex-end;
+            align-items: center;
             margin: 0px;
-            font-size: 1.00rem;
+            font-size: 1.0rem;
         }
 
