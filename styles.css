@@ -194,19 +194,35 @@
         grid-template-rows: 8fr 1fr 8fr;
     }
 
-        #main-area-announcements div {
+        #main-area-announcements #updates-card, #main-area-announcements #trending-card {
+            box-sizing: border-box;
+            display: grid;
+            grid-template-rows: auto;
             margin: 32px;
+            padding: 16px;
             border-radius: 16px;
+            align-items: center;
 
             background-color: white;
         }
 
+        #trending {
+            margin-left: 32px;
+        }
+
+        #main-area-announcements h4 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            margin: 0px;
+            font-size: 1.5rem;
+        }
+        
         #main-area-announcements p {
             display: flex;
             justify-content: flex-start;
             align-items: flex-end;
             margin: 0px;
-            margin-left: 32px;
-            font-size: 3rem;
+            font-size: 1.00rem;
         }
 
